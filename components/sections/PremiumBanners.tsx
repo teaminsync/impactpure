@@ -183,7 +183,7 @@ const PremiumBanner = ({ content, index }: BannerProps) => {
                   src={content.image || "/placeholder.svg"}
                   alt={content.title}
                   fill
-                  className="object-contain md:object-cover"
+                  className="object-cover md:object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority={index === 0}
                 />
