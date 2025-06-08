@@ -88,7 +88,7 @@ const ContactContent = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      details: ["contact@impactpure.com", "support@impactpure.com"],
+      details: ["contact@impactpure.com"],
     },
   ]
 
