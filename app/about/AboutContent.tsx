@@ -30,11 +30,12 @@ const AboutContent = () => {
   ]
 
   const stats = [
-    { number: "10+", label: "Years of Research" },
-    { number: "5", label: "Registered Patents" },
-    { number: "99.99%", label: "Purification Rate" },
-    { number: "10K+", label: "Happy Customers" },
-  ]
+  { number: "8", label: "Stage Filtration" },
+  { number: "10 Years", label: "Lifespan" },
+  { number: "5", label: "Registered Patents" },
+  { number: "99.99%", label: "Purification Rate" },
+]
+
 
   return (
     <section className="overflow-hidden pt-12 md:pt-16 lg:pt-12 pb-0"

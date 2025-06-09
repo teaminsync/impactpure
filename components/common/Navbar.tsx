@@ -176,7 +176,7 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 10, scale: 0.95 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-lg py-2 z-50 border border-neutral-100"
+                      className="absolute -right-8 md:right-0 mt-2 w-64 bg-white rounded-xl shadow-lg py-2 z-50 border border-neutral-100"
                     >
                       {showProfile && profileData ? (
                         <div className="px-4 py-3">

@@ -12,7 +12,7 @@ const CancellationsContent = () => {
       content: [
         "Cancellations will be considered only if the request is made within 1-2 days of placing the order",
         "Cancellation requests may not be entertained if orders have been communicated to vendors and shipping has been initiated",
-        "PRO-WIN Healthcare Pvt. Ltd does not accept cancellation requests for perishable items",
+        "PRO-WIN Healthcare Pvt. Ltd does not accept cancellation requests for perishable items like flowers, eatables, etc.",
       ],
     },
     {
@@ -20,15 +20,16 @@ const CancellationsContent = () => {
       title: "Refund Conditions",
       content: [
         "Refund/replacement can be made if the customer establishes that the quality of the product delivered is not good",
-        "Damaged or defective items must be reported to our Customer Service team within 1-2 days of receipt",
-        "The request will be entertained once the merchant has checked and determined the issue",
+        "Damaged or defective items must be reported within 1-2 days of receipt",
+        "The request will be entertained once the merchant has checked and determined the issue at their own end",
+        "If you feel the product received is not as shown on the site or as per expectations, notify within 1-2 days",
       ],
     },
     {
       icon: <AlertTriangle className="w-6 h-6" />,
-      title: "Quality Issues",
+      title: "Quality Issues & Warranty",
       content: [
-        "If you feel that the product received is not as shown on the site or as per your expectations, notify our customer service within 1-2 days",
+        "Our team will take appropriate decision after looking into your complaint",
         "For complaints regarding products with manufacturer warranty, please refer the issue to them directly",
         "All quality claims must be supported with proper documentation and evidence",
       ],
@@ -40,6 +41,7 @@ const CancellationsContent = () => {
         "Approved refunds will take 9-15 days to be processed to the end customer",
         "Refunds will be processed to the original payment method used during purchase",
         "You will receive email confirmation once the refund has been initiated",
+        "All refund approvals are subject to PRO-WIN Healthcare Pvt. Ltd's verification process",
       ],
     },
   ]
@@ -48,7 +50,7 @@ const CancellationsContent = () => {
     {
       step: "01",
       title: "Contact Support",
-      description: "Reach out to our customer service team within the specified timeframe",
+      description: "Reach out to our team within the specified timeframe",
     },
     {
       step: "02",
@@ -82,8 +84,7 @@ const CancellationsContent = () => {
       </section>
 
       {/* Policy Overview */}
-      <section className="bg-white pt-4 pb-16 md:pt-6 md:pb-20 lg:pt-4 lg:pb-16
-">
+      <section className="bg-white pt-4 pb-16 md:pt-6 md:pb-20 lg:pt-4 lg:pb-16">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {policies.map((policy, index) => (

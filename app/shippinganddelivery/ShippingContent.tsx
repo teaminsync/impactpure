@@ -7,15 +7,6 @@ import FadeIn from "@/components/animations/FadeIn"
 const ShippingContent = () => {
   const shippingInfo = [
     {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Processing Time",
-      content: [
-        "Orders are processed within 1-2 business days after payment confirmation",
-        "Processing time may vary during peak seasons or promotional periods",
-        "You will receive a confirmation email once your order is processed",
-      ],
-    },
-    {
       icon: <Truck className="w-6 h-6" />,
       title: "Delivery Timeline",
       content: [
@@ -26,16 +17,6 @@ const ShippingContent = () => {
       ],
     },
     {
-      icon: <Package className="w-6 h-6" />,
-      title: "Delivery Process",
-      content: [
-        "We partner with reputed courier services for safe and reliable delivery",
-        "Tracking number provided once the order is shipped",
-        "Re-attempts made if recipient is unavailable at delivery address",
-        "Signature required for delivery confirmation",
-      ],
-    },
-    {
       icon: <MapPin className="w-6 h-6" />,
       title: "Coverage Areas",
       content: [
@@ -43,6 +24,24 @@ const ShippingContent = () => {
         "International shipping not available at this time",
         "For bulk export orders, please contact our support team",
         "Remote area delivery subject to courier partner availability",
+      ],
+    },
+    {
+      icon: <Package className="w-6 h-6" />,
+      title: "Delivery Process",
+      content: [
+        "We partner with reputed courier services for safe and reliable delivery",
+        "Tracking number provided once the order is shipped",
+        "Re-attempts made if recipient is unavailable at delivery address",
+      ],
+    },
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: "Processing Time",
+      content: [
+        "Orders are processed within 1-2 business days after payment confirmation",
+        "Processing time may vary during peak seasons or promotional periods",
+        "You will receive a confirmation email once your order is processed",
       ],
     },
   ]
@@ -156,37 +155,95 @@ const ShippingContent = () => {
         </div>
       </section>
 
-     
-      {/* Contact Information */}
+      {/* Delays & International Shipping */}
       <section className="section bg-white">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <FadeIn>
-            <div className="bg-neutral-50 rounded-2xl p-8 text-center">
-              <h2 className="text-2xl font-medium text-neutral-900 mb-4">Need Help with Shipping?</h2>
-              <p className="text-neutral-600 mb-6 max-w-2xl mx-auto">
-                For any queries related to shipping and delivery, or if your order is delayed beyond the expected
-                timeframe, please contact our support team.
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-medium text-neutral-900 mb-2">PRO-WIN Healthcare Pvt. Ltd</h3>
-                  <p className="text-neutral-600 text-sm">
-                    Enath Ghadi Marg Ambekar Nagar Parel Village G/13 Mumbai, Maharashtra 400012
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <FadeIn>
+              <div className="bg-orange-50 rounded-2xl p-8 border border-orange-200">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 text-orange-600" />
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-medium text-neutral-900 mb-4">Delays & Exceptions</h2>
+                    <div className="space-y-3 text-neutral-600">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0" />
+                        <p>
+                          Unforeseen circumstances like natural disasters, strikes, or pandemics may cause shipping
+                          delays beyond our control.
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0" />
+                        <p>
+                          If your order is delayed beyond the expected timeframe, please contact us for immediate
+                          assistance.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-neutral-500">Phone:</span>
-                    <a href="tel:+917738490103" className="text-primary-600 font-medium hover:underline">
-                      +91 77384 90103
-                    </a>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.1}>
+              <div className="bg-blue-50 rounded-2xl pt-8 pr-8 pl-8 pb-14 border border-blue-200">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-blue-600" />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-neutral-500">Email:</span>
-                    <a href="mailto:contact@impactpure.com" className="text-primary-600 font-medium hover:underline">
-                      contact@impactpure.com
-                    </a>
+                  <div>
+                    <h2 className="text-xl font-medium text-neutral-900 mb-4">International Shipping</h2>
+                    <div className="space-y-3 text-neutral-600">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
+                        <p>Currently, we do not offer international shipping for individual orders.</p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
+                        <p>
+                          For bulk export orders or international business inquiries, please reach out to our support
+                          team.
+                        </p>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="section bg-primary-600 text-white">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <FadeIn className="text-center">
+            <h2 className="text-2xl font-medium mb-4">Need Help with Shipping?</h2>
+            <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
+              For any queries related to shipping and delivery, please contact our support team.
+            </p>
+            <div className="space-y-2">
+              <div>
+                <h3 className="font-medium mb-2">PRO-WIN Healthcare Pvt. Ltd</h3>
+                <p className="text-primary-100 text-sm mb-4">
+                  Enath Ghadi Marg Ambekar Nagar Parel Village G/13 Mumbai, Maharashtra 400012
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8">
+                <div className="flex items-center space-x-2">
+                  <span className="text-primary-100">Phone:</span>
+                  <a href="tel:+917738490103" className="font-medium hover:underline">
+                    +91 77384 90103
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-primary-100">Email:</span>
+                  <a href="mailto:contact@impactpure.com" className="font-medium hover:underline">
+                    contact@impactpure.com
+                  </a>
                 </div>
               </div>
             </div>
