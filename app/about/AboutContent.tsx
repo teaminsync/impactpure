@@ -30,8 +30,8 @@ const AboutContent = () => {
   ]
 
   const stats = [
-  { number: "8", label: "Stage Filtration" },
   { number: "10 Years", label: "Lifespan" },
+  { number: "8", label: "Stage Filtration" },
   { number: "5", label: "Registered Patents" },
   { number: "99.99%", label: "Purification Rate" },
 ]
